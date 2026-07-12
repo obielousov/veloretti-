@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Nuckle-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Nuckle-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>product</title>
+		<script type="module" crossorigin="" src="./js/product.min.js?v=1783873690839"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1783873690839">
+		<link rel="modulepreload" crossorigin="" href="./js/pagination.min.js?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/product.min.css?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/sectionbg.min.css?v=1783873690839">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<a href="index.html" class="header__logo" aria-label="Veloretti">VELORETTI</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="products.html" class="menu__link">Electric</a>
+								</li>
+								<li class="menu__item">
+									<a href="cities.html" class="menu__link">City</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Kids</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Accessories</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Stores</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">About</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__lang">
+							<select class="header__lang-select" aria-label="Language">
+								<option value="en" selected>EN</option>
+								<option value="ua">UA</option>
+							</select>
+						</div>
+						<button type="button" class="header__icon --icon-icon-user" aria-label="Account"></button>
+						<button type="button" class="header__icon --icon-icon-cart" aria-label="Cart"></button>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-product="" class="product-page product">
+					<section class="product-showcase showcase" aria-label="Product showcase">
+						<div class="showcase__inner">
+							<div data-fls-slider-product="" class="showcase__slider swiper" role="region" aria-roledescription="carousel" aria-label="Product images">
+								<div class="showcase__wrapper swiper-wrapper">
+									<div class="showcase__slide swiper-slide" role="group" aria-roledescription="slide">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product-slider-600.webp" type="image/webp">
+											<img alt="" src="./assets/img/products/product-page/product-slider.webp">
+										</picture>
+									</div>
+									<div class="showcase__slide swiper-slide" role="group" aria-roledescription="slide">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product-slider-600.webp" type="image/webp">
+											<img alt="" src="./assets/img/products/product-page/product-slider.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="showcase__arrows">
+									<button type="button" class="showcase__arrow showcase__arrow--prev swiper-button-prev" aria-label="Previous"></button>
+									<button type="button" class="showcase__arrow showcase__arrow--next swiper-button-next" aria-label="Next"></button>
+								</div>
+								<div class="showcase__pagination swiper-pagination"></div>
+							</div>
+							<div class="showcase__body body-showcase">
+								<div class="body-showcase__header">
+									<h1 class="body-showcase__title">
+										Electric Ivy
+										<span class="body-showcase__subtitle">Two</span>
+									</h1>
+									<p class="body-showcase__price">€3.299</p>
+								</div>
+								<div class="body-showcase__radio">
+									<label class="body-showcase__bike">
+										<input type="radio" name="showcase-bike" class="body-showcase__bike-input" checked aria-label="Electric Ace Two">
+										<span class="body-showcase__bike-image">
+											<picture>
+												<img alt="Electric Ace Two" src="./assets/img/products/product-page/product-radio01.webp">
+											</picture>
+										</span>
+										<span class="body-showcase__bike-label">
+											<span class="body-showcase__bike-name">Electric Ace</span>
+											<span class="body-showcase__bike-subname">Two</span>
+										</span>
+									</label>
+									<label class="body-showcase__bike">
+										<input type="radio" name="showcase-bike" class="body-showcase__bike-input" aria-label="Electric Ivy Two">
+										<span class="body-showcase__bike-image">
+											<picture>
+												<img alt="Electric Ivy Two" src="./assets/img/products/product-page/product-radio02.webp">
+											</picture>
+										</span>
+										<span class="body-showcase__bike-label">
+											<span class="body-showcase__bike-name">Electric Ivy</span>
+											<span class="body-showcase__bike-subname">Two</span>
+										</span>
+									</label>
+								</div>
+								<div class="body-showcase__colors colors-body">
+									<span class="colors-body__color-name">Ivy Two Matte Black</span>
+									<div class="colors-body__wrapper">
+										<label class="colors-body__color">
+											<input type="radio" name="showcase-color" class="colors-body__color-input" checked aria-label="Matte Black" data-color-name="Matte Black">
+											<span class="colors-body__color-swatch colors-body__color-swatch--black"></span>
+										</label>
+										<label class="colors-body__color">
+											<input type="radio" name="showcase-color" class="colors-body__color-input" aria-label="Heavy Metal" data-color-name="Heavy Metal">
+											<span class="colors-body__color-swatch colors-body__color-swatch--metal"></span>
+										</label>
+										<label class="colors-body__color">
+											<input type="radio" name="showcase-color" class="colors-body__color-input" aria-label="Moon Mist" data-color-name="Moon Mist">
+											<span class="colors-body__color-swatch colors-body__color-swatch--moon"></span>
+										</label>
+										<label class="colors-body__color">
+											<input type="radio" name="showcase-color" class="colors-body__color-input" aria-label="Parchment" data-color-name="Parchment">
+											<span class="colors-body__color-swatch colors-body__color-swatch--parchment"></span>
+										</label>
+									</div>
+								</div>
+								<div class="body-showcase__content">
+									<a href="#" class="body-showcase__link-payment">
+										<span>3 interest-free payments with</span>
+										Klarna
+									</a>
+									<div class="body-showcase__text">
+										<p>
+											The Ivy Two is a step-through frame electric bike combining design, advanced
+							technology, and safety features. Rider height: between 164 and 184cm.
+										</p>
+									</div>
+									<a href="#" data-fls-scrollto-top="200" data-fls-scrollto="details" class="body-showcase__specification">Scroll to Specifications</a>
+									<button class="body-showcase__button">Customise now</button>
+								</div>
+								<div class="body-showcase__bottom">
+									<div class="body-showcase__shipping">
+										<p>Shipping to the Netherlands, Belgium & Germany only.</p>
+									</div>
+									<div class="body-showcase__delivery">Delivery time: 5-15 business days</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-fls-sectionbg="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="sectionbg product-page__sectionbg">
+						<div class="sectionbg__container">
+							<div class="sectionbg__content">
+								<h2 class="sectionbg__title">Removable long-range battery</h2>
+								<div class="sectionbg__text">
+									<p>
+										Discover a new level of convenience and control with our elegantly designed integrated display. Everything you need to manage your ride is right at your fingertips, from customizing your bike’s settings to navigating unfamiliar parts of the city. And with seamless integration to our app, you can access all your data and ride information with ease.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sectionbg__bg" aria-hidden="true">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/productbg01-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/products/product-page/productbg01-1200.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/product-page/productbg01.webp">
+							</picture>
+						</div>
+					</section>
+					<section class="product-page__cards">
+						<div data-fls-productcard="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="card-product">
+							<div class="card-product__item">
+								<div class="card-product__content">
+									<h2 class="card-product__title">Ivy Two</h2>
+									<div class="card-product__text">
+										<p>
+											Introducing the Ivy Two, the electric bike that takes your daily commute to the next level. With an accessible lower frame, the latest technology, and safety features, the Ivy delivers instant power, convenience, and peace of mind at every turn, making it the go-to bike for any commute. Equipped with a bright LED brake light for enhanced visibility and safety tracking for added security, the Ivy Two is the perfect combination of design, technology, and safety.
+										</p>
+									</div>
+								</div>
+								<div class="card-product__media">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product01-600.webp" type="image/webp">
+										<img alt="" src="./assets/img/products/product-page/product01.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div data-fls-productcard="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="card-product">
+							<div class="card-product__item card-product__item--reverse">
+								<div class="card-product__content">
+									<h2 class="card-product__title">Silent and powerful mid- motor</h2>
+									<div class="card-product__text">
+										<p>
+											Natural and powerful. The 65Nm torque mid-engine gives you all the power you need. Because the engine is directly connected to your pedals, it automatically adjusts its power to your torque instead of speed. This gives you the most natural electric biking experience there is.
+										</p>
+									</div>
+								</div>
+								<div class="card-product__media">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product02-600.webp" type="image/webp">
+										<img alt="" src="./assets/img/products/product-page/product02.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-fls-sectionbg="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="sectionbg product-page__sectionbg">
+						<div class="sectionbg__container">
+							<div class="sectionbg__content">
+								<h2 class="sectionbg__title">Built-in display</h2>
+								<div class="sectionbg__text">
+									<p>
+										Discover a new level of convenience and control with our elegantly designed integrated display. Everything you need to manage your ride is right at your fingertips, from customizing your bike’s settings to navigating unfamiliar parts of the city. And with seamless integration to our app, you can access all your data and ride information with ease.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sectionbg__bg" aria-hidden="true">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/productbg02-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/products/product-page/productbg02-1200.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/product-page/productbg02.webp">
+							</picture>
+						</div>
+					</section>
+					<section class="product-page__cards">
+						<div data-fls-productcard="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="card-product">
+							<div class="card-product__item">
+								<div class="card-product__content">
+									<h2 class="card-product__title">Enviolo® automated gears</h2>
+									<div class="card-product__text">
+										<p>
+											Never think about shifting gears again. The Enviolo® gear system takes automated gear-shifting to the next level, delivering the ultimate ride experience every time. This advanced technology effortlessly shifts gears to optimize performance, delivering a natural and effortless ride. Say goodbye to clunky gear changes and hello to a ride that’s both easy and efficient.
+										</p>
+									</div>
+								</div>
+								<div class="card-product__media">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product04-600.webp" type="image/webp">
+										<img alt="" src="./assets/img/products/product-page/product04.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div data-fls-productcard="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="card-product">
+							<div class="card-product__item card-product__item--reverse">
+								<div class="card-product__content">
+									<h2 class="card-product__title">Gates® belt drive</h2>
+									<div class="card-product__text">
+										<p>
+											The Gates Carbon Belt drive is a game-changer. Made from premium quality carbon, it offers unmatched durability and strength. And the best part? You’ll never have to worry about oiling your chain again. With our carbon belt, you’ll enjoy a seamless, hassle-free biking experience that requires no maintenance for up to 30,000 kilometers.
+										</p>
+									</div>
+								</div>
+								<div class="card-product__media">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product05-600.webp" type="image/webp">
+										<img alt="" src="./assets/img/products/product-page/product05.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+						<div data-fls-productcard="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="card-product">
+							<div class="card-product__item">
+								<div class="card-product__content">
+									<h2 class="card-product__title">LED brake light</h2>
+									<div class="card-product__text">
+										<p>
+											When commuting, safety is priority. We acknowledge the significance of being alert and responsive on the road. That’s why we created our brake light to activate instantly and illuminate brightly upon pressing the brakes. This feature guarantees that other drivers and commuters are immediately notified of your intention to slow down or come to a complete stop, ensuring your safety on the road.
+										</p>
+									</div>
+								</div>
+								<div class="card-product__media">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product06-600.webp" type="image/webp">
+										<img alt="" src="./assets/img/products/product-page/product06.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-fls-sectionbg="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="sectionbg product-page__sectionbg">
+						<div class="sectionbg__container">
+							<div class="sectionbg__content">
+								<h2 class="sectionbg__title">Osram® precision light</h2>
+								<div class="sectionbg__text">
+									<p>
+										Safety is fundamental when it comes to biking. We’ve designed the precision front light with precision and clarity in mind. From dark roads to challenging city terrain, the precision front light, with its strong beam, is designed to help you navigate with ease and safety. No matter the environment, we make sure we provide you with the visibility you need.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sectionbg__bg" aria-hidden="true">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/productbg03-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/products/product-page/productbg03-1200.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/product-page/productbg03.webp">
+							</picture>
+						</div>
+					</section>
+					<div data-fls-split="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="split__wrapper">
+						<div class="split__picture">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product09-600.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/product-page/product09.webp">
+							</picture>
+						</div>
+						<div class="split__content content-split">
+							<h2 class="content-split__title">Safety tracking</h2>
+							<div class="content-split__text">
+								<p>
+									The Electric Two comes with safety tracking. In case you find yourself in an uncertain situation, simply press the button on your handlebar to alert your loved ones of your live location and feel more secure. Whether you’re commuting in the city or exploring the countryside, you can have peace of mind knowing that notifying is just a button press away. Moreover, the tracking feature automatically deactivates after an hour, allowing you to enjoy your rides with complete privacy and security.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div data-fls-split="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="split__wrapper split__wrapper--reverse">
+						<div class="split__picture">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/product-page/product10-600.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/product-page/product10.webp">
+							</picture>
+						</div>
+						<div class="split__content content-split">
+							<h2 class="content-split__title">Shimano® hydraulic discbrakes</h2>
+							<div class="content-split__text">
+								<p>
+									The Shimano® discbrakes are premium hydraulic disc brakes designed to deliver lightning-fast stopping power, so you can ride with complete confidence and control. Rest assured, you’ll feel the difference in the moments you need it most.
+								</p>
+							</div>
+						</div>
+					</div>
+					<section id="details" class="details">
+						<div class="details__wrapper" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.2">
+							<h2 class="details__title">All in the details.</h2>
+							<div data-fls-spollers="767" class="details__information information-details" aria-label="Product specifications">
+								<details class="information-details__column">
+									<summary class="information-detail__title">Frame</summary>
+									<div class="information-details__items">
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Frame</h3>
+											<div class="item-information__text">
+												<p>Coated aluminium with integrated battery case</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Paint</h3>
+											<div class="item-information__text">
+												<p>PPG Powder Coating 2K</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Weight</h3>
+											<div class="item-information__text">
+												<p>Frame 26 kg</p>
+												<p>Battery 3 kg</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Rider Height</h3>
+											<div class="item-information__text">
+												<p>164-184cm</p>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details class="information-details__column">
+									<summary class="information-detail__title">Components</summary>
+									<div class="information-details__items">
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Motor</h3>
+											<div class="item-information__text">
+												<p>Bafang® 36v 250W / Torq + Rotation Sensor w/ a maximum torque of 65 Nm</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Battery</h3>
+											<div class="item-information__text">
+												<p>Removable Smart Battery / 36Vdc, 540 WH 60-120 km range</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Gears</h3>
+											<div class="item-information__text">
+												<p>Enviolo® TR / Pro 44T Stepless Automatic Shifting / Ratio 310%</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Display</h3>
+											<div class="item-information__text">
+												<p>Veloretti built-in display</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Brakes</h3>
+											<div class="item-information__text">
+												<p>Shimano® MT200 hydraulic disc brakes</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Tires</h3>
+											<div class="item-information__text">
+												<p>Performance Plus tire / 50-622 / Anti Puncture level 2</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Belt</h3>
+											<div class="item-information__text">
+												<p>Gates® Carbon Beltdrive / 122T CDX</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Light front</h3>
+											<div class="item-information__text">
+												<p>Osram® Precision front light LED, StVZO approved</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Light rear</h3>
+											<div class="item-information__text">
+												<p>COB Hyperbolic LED</p>
+											</div>
+										</div>
+									</div>
+								</details>
+								<details class="information-details__column">
+									<summary class="information-detail__title">Accessories</summary>
+									<div class="information-details__items">
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Abus plug</h3>
+											<div class="item-information__text">
+												<p>In-chain lock 140 cm</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Front carrier</h3>
+											<div class="item-information__text">
+												<p>AVS front carrier 480g Carrying Capacity: 10 kg (22 lb)</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Rear carrier</h3>
+											<div class="item-information__text">
+												<p>TBA</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Basket</h3>
+											<div class="item-information__text">
+												<p>AVS basket 1.33kg Carrying Capacity: 10 kg (22 lb)</p>
+											</div>
+										</div>
+										<div class="information-details__item item-information">
+											<h3 class="item-information__label">Cargo basket</h3>
+											<div class="item-information__text">
+												<p>AVS cargo basket 1.7kg Carrying Capacity: 10 kg (22 lb)</p>
+											</div>
+										</div>
+									</div>
+								</details>
+							</div>
+							<a href="#" class="details__button button">Download Full Specifications</a>
+						</div>
+					</section>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__banner banner-footer">
+					<div class="banner-footer__text">
+						<p>
+							Ready to take the Electric Ivy or Ace for a spin? Electric test rides are now available
+				in Amsterdam, Amstelveen, Abcoude, Bussum, Den Haag, Nijmegen, Weesp, Wormerveer,
+				Berlin, Hamburg and Munich. Schedule your test ride now and we'll see you there.
+						</p>
+					</div>
+					<a data-fls-button="" href="#" class="button">BOOK NOW</a>
+				</div>
+				<div class="footer__wrapper">
+					<div class="footer__container">
+						<div data-fls-spollers="992" class="footer__lists">
+							<details class="footer__column column-footer">
+								<summary class="column-footer__label">Explorer</summary>
+								<ul class="column-footer__list">
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Electric bikes</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">City bikes</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Kids' bikes</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Accessories</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Business</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Insurance Electric</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Size guide</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__column column-footer">
+								<summary class="column-footer__label">About</summary>
+								<ul class="column-footer__list">
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">About us</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Journal</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Reviews</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Press</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Jobs</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__column column-footer">
+								<summary class="column-footer__label">Help</summary>
+								<ul class="column-footer__list">
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Contact</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">FAQ</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Delivery</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Assembly & manuals</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Payment options</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Privacy policy</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Terms & conditions</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<div class="footer__column column-footer">
+							<h2 class="column-footer__label column-footer__label--label-form">Join the ride.</h2>
+							<h3 class="column-footer__subtitle">Sign up for our newsletter.</h3>
+							<form action="#" class="column-footer__form form">
+								<div class="form__inputs">
+									<input type="email" placeholder="Enter your email address here" class="form__input">
+									<button type="submit" class="form__button">Subscribe</button>
+								</div>
+								<div class="form__checkbox-wrapper">
+									<label data-fls-checkbox="" class="form__checkbox checkbox">
+										<input data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]" required>
+										<span class="checkbox__text">
+											By signing up, I agree to the
+											<a href="#" class="checkbox__link">privacy policy</a>
+											of Veloretti.
+										</span>
+									</label>
+								</div>
+							</form>
+							<ul class="column-footer__social social">
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-fb"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-inst"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-ytb"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-inn"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-tik-tok"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

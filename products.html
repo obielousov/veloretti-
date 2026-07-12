@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Nuckle-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Nuckle-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>products</title>
+		<script type="module" crossorigin="" src="./js/products.min.js?v=1783873690839"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1783873690839">
+		<link rel="modulepreload" crossorigin="" href="./js/pagination.min.js?v=1783873690839">
+		<link rel="modulepreload" crossorigin="" href="./js/scrollbar.min.js?v=1783873690839">
+		<link rel="modulepreload" crossorigin="" href="./js/explore.min.js?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/explore.min.css?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/products.min.css?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/hero.min.css?v=1783873690839">
+		<link rel="stylesheet" crossorigin="" href="./css/sectionbg.min.css?v=1783873690839">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<a href="index.html" class="header__logo" aria-label="Veloretti">VELORETTI</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="products.html" class="menu__link">Electric</a>
+								</li>
+								<li class="menu__item">
+									<a href="cities.html" class="menu__link">City</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Kids</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Accessories</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Stores</a>
+								</li>
+								<li class="menu__item">
+									<a href="about.html" class="menu__link">About</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions">
+						<div class="header__lang">
+							<select class="header__lang-select" aria-label="Language">
+								<option value="en" selected>EN</option>
+								<option value="ua">UA</option>
+							</select>
+						</div>
+						<button type="button" class="header__icon --icon-icon-user" aria-label="Account"></button>
+						<button type="button" class="header__icon --icon-icon-cart" aria-label="Cart"></button>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div data-fls-products="" class="products-page products">
+					<section data-fls-hero="" class="hero">
+						<div class="hero__container">
+							<span class="hero__subtitle" id="hero-subtitle">VELORETTI ELECTRIC</span>
+							<h1 class="hero__title" id="hero-title">This is Two.</h1>
+							<div class="hero__text">
+								<p>Introducing the all-new Ivy and Ace</p>
+							</div>
+						</div>
+						<div class="herobg hero__bg" aria-hidden="true">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/productsbg-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/products/productsbg-1200.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/productsbg.webp">
+							</picture>
+						</div>
+					</section>
+					<section data-fls-slider-section="" aria-roledescription="carousel" aria-label="Featured products" class="products-page__featured featured">
+						<div class="featured__wrapper swiper-wrapper" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3">
+							<div class="featured__card swiper-slide" role="group" aria-roledescription="slide">
+								<div class="featured__header">
+									<div class="featured__title-group">
+										<h2 class="featured__title">Electric Ace</h2>
+										<span class="featured__subtitle">Two</span>
+									</div>
+									<div class="featured__price">€69,07 NET/MONTH</div>
+								</div>
+								<div class="featured__description">Rider height: 173-200cm</div>
+								<div data-fls-slider-featured="" class="featured__slider swiper" aria-roledescription="carousel">
+									<div class="featured__swiper-wrapper swiper-wrapper">
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="featured__arrows">
+										<button type="button" class="featured__arrow featured__arrow--prev swiper-button-prev" aria-label="Previous">
+											<svg width="15" height="31" viewbox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M14 1L2 15.5L14 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+										<button type="button" class="featured__arrow featured__arrow--next swiper-button-next" aria-label="Next">
+											<svg width="29" height="31" viewbox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M1 1L13 15.5L1 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="featured__footer">
+									<div class="featured__actions">
+										<a href="#" class="featured__btn">Buy Now</a>
+										<a href="#" class="featured__link">Learn more</a>
+									</div>
+									<div class="featured__colors">
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-1" id="fcp1-black" class="featured__color-input" checked aria-label="Black">
+											<label for="fcp1-black" class="featured__color-label featured__color-label--black" title="Black"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-1" id="fcp1-gray" class="featured__color-input" aria-label="Heavy Metal">
+											<label for="fcp1-gray" class="featured__color-label featured__color-label--gray" title="Heavy Metal"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-1" id="fcp1-beige" class="featured__color-input" aria-label="Moon Mist">
+											<label for="fcp1-beige" class="featured__color-label featured__color-label--beige" title="Moon Mist"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-1" id="fcp1-split" class="featured__color-input" aria-label="Black / Parchment">
+											<label for="fcp1-split" class="featured__color-label featured__color-label--split" title="Black / Parchment"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="featured__card swiper-slide" role="group" aria-roledescription="slide">
+								<div class="featured__header">
+									<div class="featured__title-group">
+										<h2 class="featured__title">Electric Ace</h2>
+										<span class="featured__subtitle">Two</span>
+									</div>
+									<div class="featured__price">€69,07 NET/MONTH</div>
+								</div>
+								<div class="featured__description">Rider height: 173-200cm</div>
+								<div data-fls-slider-featured="" class="featured__slider swiper" aria-roledescription="carousel">
+									<div class="featured__swiper-wrapper swiper-wrapper">
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="featured__arrows">
+										<button type="button" class="featured__arrow featured__arrow--prev swiper-button-prev" aria-label="Previous">
+											<svg width="15" height="31" viewbox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M14 1L2 15.5L14 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+										<button type="button" class="featured__arrow featured__arrow--next swiper-button-next" aria-label="Next">
+											<svg width="29" height="31" viewbox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M1 1L13 15.5L1 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="featured__footer">
+									<div class="featured__actions">
+										<a href="#" class="featured__btn">Buy Now</a>
+										<a href="#" class="featured__link">Learn more</a>
+									</div>
+									<div class="featured__colors">
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-2" id="fcp2-black" class="featured__color-input" checked aria-label="Black">
+											<label for="fcp2-black" class="featured__color-label featured__color-label--black" title="Black"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-2" id="fcp2-gray" class="featured__color-input" aria-label="Heavy Metal">
+											<label for="fcp2-gray" class="featured__color-label featured__color-label--gray" title="Heavy Metal"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-2" id="fcp2-beige" class="featured__color-input" aria-label="Moon Mist">
+											<label for="fcp2-beige" class="featured__color-label featured__color-label--beige" title="Moon Mist"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-2" id="fcp2-split" class="featured__color-input" aria-label="Black / Parchment">
+											<label for="fcp2-split" class="featured__color-label featured__color-label--split" title="Black / Parchment"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="featured__card swiper-slide" role="group" aria-roledescription="slide">
+								<div class="featured__header">
+									<div class="featured__title-group">
+										<h2 class="featured__title">Electric Ace</h2>
+										<span class="featured__subtitle">Two</span>
+									</div>
+									<div class="featured__price">€69,07 NET/MONTH</div>
+								</div>
+								<div class="featured__description">Rider height: 173-200cm</div>
+								<div data-fls-slider-featured="" class="featured__slider swiper" aria-roledescription="carousel">
+									<div class="featured__swiper-wrapper swiper-wrapper">
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="featured__arrows">
+										<button type="button" class="featured__arrow featured__arrow--prev swiper-button-prev" aria-label="Previous">
+											<svg width="15" height="31" viewbox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M14 1L2 15.5L14 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+										<button type="button" class="featured__arrow featured__arrow--next swiper-button-next" aria-label="Next">
+											<svg width="29" height="31" viewbox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M1 1L13 15.5L1 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="featured__footer">
+									<div class="featured__actions">
+										<a href="#" class="featured__btn">Buy Now</a>
+										<a href="#" class="featured__link">Learn more</a>
+									</div>
+									<div class="featured__colors">
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-3" id="fcp3-black" class="featured__color-input" checked aria-label="Black">
+											<label for="fcp3-black" class="featured__color-label featured__color-label--black" title="Black"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-3" id="fcp3-gray" class="featured__color-input" aria-label="Heavy Metal">
+											<label for="fcp3-gray" class="featured__color-label featured__color-label--gray" title="Heavy Metal"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-3" id="fcp3-beige" class="featured__color-input" aria-label="Moon Mist">
+											<label for="fcp3-beige" class="featured__color-label featured__color-label--beige" title="Moon Mist"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-3" id="fcp3-split" class="featured__color-input" aria-label="Black / Parchment">
+											<label for="fcp3-split" class="featured__color-label featured__color-label--split" title="Black / Parchment"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="featured__card swiper-slide" role="group" aria-roledescription="slide">
+								<div class="featured__header">
+									<div class="featured__title-group">
+										<h2 class="featured__title">Electric Ace</h2>
+										<span class="featured__subtitle">Two</span>
+									</div>
+									<div class="featured__price">€69,07 NET/MONTH</div>
+								</div>
+								<div class="featured__description">Rider height: 173-200cm</div>
+								<div data-fls-slider-featured="" class="featured__slider swiper" aria-roledescription="carousel">
+									<div class="featured__swiper-wrapper swiper-wrapper">
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+										<div class="featured__slide swiper-slide" role="group" aria-roledescription="slide">
+											<picture>
+												<img alt="Electric Ace" src="./assets/img/home-page/home-slider01.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="featured__arrows">
+										<button type="button" class="featured__arrow featured__arrow--prev swiper-button-prev" aria-label="Previous">
+											<svg width="15" height="31" viewbox="0 0 15 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M14 1L2 15.5L14 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+										<button type="button" class="featured__arrow featured__arrow--next swiper-button-next" aria-label="Next">
+											<svg width="29" height="31" viewbox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+												<path d="M1 1L13 15.5L1 30" stroke="black" stroke-width="2"></path>
+											</svg>
+										</button>
+									</div>
+								</div>
+								<div class="featured__footer">
+									<div class="featured__actions">
+										<a href="#" class="featured__btn">Buy Now</a>
+										<a href="#" class="featured__link">Learn more</a>
+									</div>
+									<div class="featured__colors">
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-4" id="fcp4-black" class="featured__color-input" checked aria-label="Black">
+											<label for="fcp4-black" class="featured__color-label featured__color-label--black" title="Black"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-4" id="fcp4-gray" class="featured__color-input" aria-label="Heavy Metal">
+											<label for="fcp4-gray" class="featured__color-label featured__color-label--gray" title="Heavy Metal"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-4" id="fcp4-beige" class="featured__color-input" aria-label="Moon Mist">
+											<label for="fcp4-beige" class="featured__color-label featured__color-label--beige" title="Moon Mist"></label>
+										</div>
+										<div class="featured__color">
+											<input type="radio" name="fc-prod-4" id="fcp4-split" class="featured__color-input" aria-label="Black / Parchment">
+											<label for="fcp4-split" class="featured__color-label featured__color-label--split" title="Black / Parchment"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</section>
+					<section data-fls-explore="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="explore">
+						<div class="explore__header">
+							<h2 class="explore__title">Explore our bikes</h2>
+							<div class="explore__nav">
+								<button type="button" class="explore__arrow explore__arrow--prev swiper-button-prev" aria-label="Previous slide"></button>
+								<button type="button" class="explore__arrow explore__arrow--next swiper-button-next" aria-label="Next slide"></button>
+							</div>
+						</div>
+						<div class="explore__container">
+							<div data-fls-slider-explore="" class="explore__slider swiper" aria-roledescription="carousel">
+								<div class="explore__wrapper swiper-wrapper">
+									<div class="explore__slide swiper-slide" role="group" aria-roledescription="slide">
+										<div class="explore__card">
+											<div class="explore__card-header">
+												<div class="explore__card-titles">
+													<h3 class="explore__card-title">Kids' Bikes</h3>
+													<span class="explore__card-subtitle">Ages 1,5 to 8</span>
+												</div>
+												<div class="explore__card-price">From €119</div>
+											</div>
+											<div class="explore__card-image">
+												<picture>
+													<img width="320" alt="" src="./assets/img/products/explore01.webp">
+												</picture>
+											</div>
+											<div class="explore__card-footer">
+												<a href="#" class="explore__btn">Buy Now</a>
+												<a href="#" class="explore__link">Learn more</a>
+											</div>
+										</div>
+									</div>
+									<div class="explore__slide swiper-slide" role="group" aria-roledescription="slide">
+										<div class="explore__card">
+											<div class="explore__card-header">
+												<div class="explore__card-titles">
+													<h3 class="explore__card-title">Kids' Bikes</h3>
+													<span class="explore__card-subtitle">Ages 1,5 to 8</span>
+												</div>
+												<div class="explore__card-price">From €119</div>
+											</div>
+											<div class="explore__card-image">
+												<picture>
+													<img alt="" src="./assets/img/products/explore02.webp">
+												</picture>
+											</div>
+											<div class="explore__card-footer">
+												<a href="#" class="explore__btn">Buy Now</a>
+												<a href="#" class="explore__link">Learn more</a>
+											</div>
+										</div>
+									</div>
+									<div class="explore__slide swiper-slide" role="group" aria-roledescription="slide">
+										<div class="explore__card">
+											<div class="explore__card-header">
+												<div class="explore__card-titles">
+													<h3 class="explore__card-title">Kids' Bikes</h3>
+													<span class="explore__card-subtitle">Ages 1,5 to 8</span>
+												</div>
+												<div class="explore__card-price">From €119</div>
+											</div>
+											<div class="explore__card-image">
+												<picture>
+													<img alt="" src="./assets/img/products/explore01.webp">
+												</picture>
+											</div>
+											<div class="explore__card-footer">
+												<a href="#" class="explore__btn">Buy Now</a>
+												<a href="#" class="explore__link">Learn more</a>
+											</div>
+										</div>
+									</div>
+									<div class="explore__slide swiper-slide" role="group" aria-roledescription="slide">
+										<div class="explore__card">
+											<div class="explore__card-header">
+												<div class="explore__card-titles">
+													<h3 class="explore__card-title">Kids' Bikes</h3>
+													<span class="explore__card-subtitle">Ages 1,5 to 8</span>
+												</div>
+												<div class="explore__card-price">From €119</div>
+											</div>
+											<div class="explore__card-image">
+												<picture>
+													<img alt="" src="./assets/img/products/explore02.webp">
+												</picture>
+											</div>
+											<div class="explore__card-footer">
+												<a href="#" class="explore__btn">Buy Now</a>
+												<a href="#" class="explore__link">Learn more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-scrollbar"></div>
+							</div>
+						</div>
+					</section>
+					<section class="products-page__commute commute" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3">
+						<div class="commute__wrapper">
+							<h2 class="commute__title">
+								Make your commute
+								<br>
+								the best part of your day.
+							</h2>
+							<div class="commute__content">
+								<div class="commute__text">
+									<p>
+										Clean and timeless designs that make every ride a thrill. Wherever you're heading,
+						our bikes are made to make your daily commute a joy.
+									</p>
+								</div>
+								<div class="commute__icon">
+									<img src="./assets/img/products/logo04.svg" alt="Image">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-fls-sectionbg="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="sectionbg products-page__sectionbg">
+						<div class="sectionbg__container">
+							<div class="sectionbg__content">
+								<h2 class="sectionbg__title">Discover your local Veloretti partner store</h2>
+								<div class="sectionbg__text">
+									<p>
+										Our partner stores across the Netherlands are there for you. Whether you’re looking to pick up a newly ordered bike, need a fix, or want to take a test ride on our Ivy or Ace Two, your ideal biking experience is closer than you think.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sectionbg__bg" aria-hidden="true">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/productbg01-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/products/productbg01-1200.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/productbg01.webp">
+							</picture>
+						</div>
+					</section>
+					<div data-fls-split="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="split__wrapper">
+						<div class="split__picture">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/products01-600.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/products01.webp">
+							</picture>
+						</div>
+						<div class="split__content content-split">
+							<h2 class="content-split__title">Leasing</h2>
+							<div class="content-split__text">
+								<p>
+									Want to provide your organisation with mobility in a unique and creative way? Our Electric and City bikes are the perfect solution for healthier employees. So whether it’s customised employee bicycles or standout promotional rides, both small and big organisations share the love of our Veloretti designs. Depending on the number of bikes, we will give you a customised quote.
+								</p>
+							</div>
+							<a href="#" class="content-split__link">Learn more</a>
+						</div>
+					</div>
+					<section data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="products-page__talked talked">
+						<div class="talked__wrapper">
+							<h2 class="talked__title">They talked about us</h2>
+							<ul class="talked__content content-talked">
+								<li data-fls-talkeditem="" class="content-talked__item">
+									<blockquote class="content-talked__text">
+										<p>
+											One of the best e-bikes available at any price and far and away my favourite ride of the year.
+										</p>
+									</blockquote>
+									<cite class="content-talked__logo">
+										<img src="./assets/img/products/logo01.svg" alt="">
+									</cite>
+								</li>
+								<li data-fls-talkeditem="" class="content-talked__item">
+									<blockquote class="content-talked__text">
+										<p>This second-generation Ace is a superhero amongst urban e-bikes… 9/10.</p>
+									</blockquote>
+									<cite class="content-talked__logo">
+										<img src="./assets/img/products/logo02.svg" alt="">
+									</cite>
+								</li>
+								<li data-fls-talkeditem="" class="content-talked__item">
+									<blockquote class="content-talked__text">
+										<p>
+											The timeless, chic design and stunning craftsmanship make them the perfect way to get around the city.
+										</p>
+									</blockquote>
+									<cite class="content-talked__logo">
+										<img src="./assets/img/products/logo03.svg" alt="">
+									</cite>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section data-fls-sectionbg="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="sectionbg products-page__sectionbg">
+						<div class="sectionbg__container">
+							<div class="sectionbg__content">
+								<h2 class="sectionbg__title">Red Dot Award</h2>
+								<div class="sectionbg__text">
+									<p>
+										Good design is what drives us, and we’re proud to share that Veloretti Electric Two has already won the prestigious Red Dot Design Award 2023, as judged by the world’s best product designers.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sectionbg__bg" aria-hidden="true">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/productsbg02-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/products/productsbg02-1200.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/productsbg02.webp">
+							</picture>
+						</div>
+					</section>
+					<div data-fls-split="" data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold="0.3" class="split__wrapper split__wrapper--reverse">
+						<div class="split__picture">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/products/products02-600.webp" type="image/webp">
+								<img alt="" src="./assets/img/products/products02.webp">
+							</picture>
+						</div>
+						<div class="split__content content-split">
+							<h2 class="content-split__title">Ride carefree</h2>
+							<div class="content-split__text">
+								<p>
+									Our Qover x Veloretti insurance plan has got you covered. It offers comprehensive coverage against theft, provides assistance in case of any issues, and covers any damages to your bike.
+								</p>
+							</div>
+							<a href="#" class="content-split__link">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__banner banner-footer">
+					<div class="banner-footer__text">
+						<p>
+							Ready to take the Electric Ivy or Ace for a spin? Electric test rides are now available
+				in Amsterdam, Amstelveen, Abcoude, Bussum, Den Haag, Nijmegen, Weesp, Wormerveer,
+				Berlin, Hamburg and Munich. Schedule your test ride now and we'll see you there.
+						</p>
+					</div>
+					<a data-fls-button="" href="#" class="button">BOOK NOW</a>
+				</div>
+				<div class="footer__wrapper">
+					<div class="footer__container">
+						<div data-fls-spollers="992" class="footer__lists">
+							<details class="footer__column column-footer">
+								<summary class="column-footer__label">Explorer</summary>
+								<ul class="column-footer__list">
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Electric bikes</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">City bikes</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Kids' bikes</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Accessories</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Business</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Insurance Electric</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Size guide</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__column column-footer">
+								<summary class="column-footer__label">About</summary>
+								<ul class="column-footer__list">
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">About us</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Journal</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Reviews</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Press</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Jobs</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__column column-footer">
+								<summary class="column-footer__label">Help</summary>
+								<ul class="column-footer__list">
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Contact</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">FAQ</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Delivery</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Assembly & manuals</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Payment options</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Privacy policy</a>
+									</li>
+									<li class="column-footer__item">
+										<a href="#" class="column-footer__link">Terms & conditions</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+						<div class="footer__column column-footer">
+							<h2 class="column-footer__label column-footer__label--label-form">Join the ride.</h2>
+							<h3 class="column-footer__subtitle">Sign up for our newsletter.</h3>
+							<form action="#" class="column-footer__form form">
+								<div class="form__inputs">
+									<input type="email" placeholder="Enter your email address here" class="form__input">
+									<button type="submit" class="form__button">Subscribe</button>
+								</div>
+								<div class="form__checkbox-wrapper">
+									<label data-fls-checkbox="" class="form__checkbox checkbox">
+										<input data-error="Error" class="checkbox__input" type="checkbox" value="1" name="form[]" required>
+										<span class="checkbox__text">
+											By signing up, I agree to the
+											<a href="#" class="checkbox__link">privacy policy</a>
+											of Veloretti.
+										</span>
+									</label>
+								</div>
+							</form>
+							<ul class="column-footer__social social">
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-fb"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-inst"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-ytb"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-inn"></a>
+								</li>
+								<li class="social__item">
+									<a href="#" class="social__link social__link--icon-tik-tok"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
