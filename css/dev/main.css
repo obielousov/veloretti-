@@ -318,10 +318,11 @@ body {
   margin-left: auto;
 }
 .header__lang-select {
-  padding: 1.25rem;
+  padding-block: 1.25rem;
+  padding-inline: clamp(0.3125rem, -0.3345rem + 2.1127vw, 1.25rem); /* 20/5>1200-490 */
   font-family: var(--font-family);
   font-size: 0.75rem;
-  font-weight: 591;
+  font-weight: 500;
   letter-spacing: 0.0375rem;
   text-transform: uppercase;
   color: var(--main-color);
@@ -341,7 +342,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem;
+  padding-block: 1.25rem;
+  padding-inline: clamp(0.3125rem, -0.3345rem + 2.1127vw, 1.25rem); /* 20/5>1200-490 */
   background: none;
   border: none;
   cursor: pointer;
@@ -460,6 +462,7 @@ body {
   font-size: clamp(0.875rem, 1.1964rem - 0.3571vw, 1.125rem); /* 14/18>1440-320 */
   font-weight: 500;
   line-height: 1.5;
+  transition: color 0.5s;
 }
 .column-footer__subtitle {
   font-size: clamp(0.875rem, 1.1425rem - 0.2972vw, 1rem); /* 14/16>1440-767 */
@@ -523,6 +526,7 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   background-color: var(--white-color);
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .social {
@@ -685,10 +689,23 @@ body {
     transform: rotate(45deg);
   }
   .header__container {
-    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  .header__logo {
+    margin-right: auto;
+  }
+  .header__menu {
+    order: 3;
   }
   .header__actions {
-    display: none;
+    display: flex;
+    align-items: center;
+    order: 2;
+    margin-left: 0;
+  }
+  .header__icon {
+    position: relative;
+    z-index: 5;
   }
   .header .menu__icon {
     position: relative;
@@ -750,6 +767,13 @@ body {
     color: var(--white-title-color);
   }
 }@media (any-hover: hover), (pointer: fine){
+  html:not([data-fls-touch]) .column-footer__link:hover {
+    color: var(--beige-color);
+  }
+  html:not([data-fls-touch]) .form__button:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+  }
   html:not([data-fls-touch]) .social__link:hover {
     color: var(--bggray-color);
   }

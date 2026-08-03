@@ -6,6 +6,7 @@
   padding-inline: clamp(0.9375rem, 0.4554rem + 2.4107vw, 2.625rem); /* 42/15>1440-320 */
 }
 .works__content {
+  align-self: center;
   max-width: 31.625rem;
   margin: 0 auto;
 }
@@ -362,6 +363,10 @@
   border-radius: 1.875rem;
   transition: background-color 0.5s;
 }
+.--watcher-view .form-touch__button {
+  transition: background-color 0.5s;
+  transition-delay: 0s;
+}
 
 .touch__title {
   opacity: 0;
@@ -445,6 +450,7 @@
   max-width: 58.0625rem;
 }
 .spollers__title {
+  text-wrap: pretty;
   font-size: clamp(1rem, 0.8333rem + 0.8333vw, 1.5625rem); /* 25/16>1400-320 */
   text-wrap: balance;
   font-weight: 500;

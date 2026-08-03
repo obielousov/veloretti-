@@ -5,17 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preload" href="./assets/fonts/Nuckle-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="preload" href="./assets/fonts/Nuckle-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="shortcut icon" href="./assets/img/favicon.ico">
-		<title>about</title>
-		<script type="module" crossorigin="" src="./js/about.min.js?v=1783873690838"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1783873690838">
-		<link rel="modulepreload" crossorigin="" href="./js/scrollbar.min.js?v=1783873690838">
-		<link rel="modulepreload" crossorigin="" href="./js/explore.min.js?v=1783873690838">
-		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1783873690838">
-		<link rel="stylesheet" crossorigin="" href="./css/explore.min.css?v=1783873690838">
-		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1783873690838">
-		<link rel="stylesheet" crossorigin="" href="./css/hero.min.css?v=1783873690838">
-		<link rel="stylesheet" crossorigin="" href="./css/sectionbg.min.css?v=1783873690838">
+		<link rel="shortcut icon" href="assets/img/favicon.ico">
+		<meta name="keywords" content="veloretti, about, electric bikes, amsterdam, brand">
+		<meta name="description" content="The story behind Veloretti — Amsterdam-inspired design and timeless electric bikes, crafted for the modern rider.">
+		<title>About — Veloretti</title>
+		<meta name="robots" content="index, follow">
+		<meta name="theme-color" content="#141615">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Veloretti">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:title" content="About — Veloretti">
+		<meta property="og:description" content="The story behind Veloretti — Amsterdam-inspired design and timeless electric bikes, crafted for the modern rider.">
+		<meta property="og:image" content="./assets/img/about/aboutbg.jpg">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="About — Veloretti">
+		<meta name="twitter:description" content="The story behind Veloretti — Amsterdam-inspired design and timeless electric bikes, crafted for the modern rider.">
+		<meta name="twitter:image" content="./assets/img/about/aboutbg.jpg">
+		<script type="module" crossorigin="" src="./js/about.min.js?v=1785756077982"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/main.min.js?v=1785756077982">
+		<link rel="modulepreload" crossorigin="" href="./js/scrollbar.min.js?v=1785756077982">
+		<link rel="modulepreload" crossorigin="" href="./js/explore.min.js?v=1785756077982">
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1785756077982">
+		<link rel="stylesheet" crossorigin="" href="./css/explore.min.css?v=1785756077982">
+		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1785756077982">
+		<link rel="stylesheet" crossorigin="" href="./css/hero.min.css?v=1785756077982">
+		<link rel="stylesheet" crossorigin="" href="./css/sectionbg.min.css?v=1785756077982">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -35,15 +49,6 @@
 									<a href="cities.html" class="menu__link">City</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Kids</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Accessories</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Stores</a>
-								</li>
-								<li class="menu__item">
 									<a href="about.html" class="menu__link">About</a>
 								</li>
 							</ul>
@@ -56,8 +61,20 @@
 								<option value="ua">UA</option>
 							</select>
 						</div>
-						<button type="button" class="header__icon --icon-icon-user" aria-label="Account"></button>
-						<button type="button" class="header__icon --icon-icon-cart" aria-label="Cart"></button>
+						<button type="button" class="header__icon" aria-label="Account">
+							<svg width="18" height="13.1" viewbox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<path d="M11 1.15C12.7122 1.15 14.1 2.5378 14.1 4.25C14.1 5.9622 12.7122 7.35 11 7.35C9.2878 7.35 7.9 5.9622 7.9 4.25C7.9 2.5378 9.2878 1.15 11 1.15Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M11 8.85C13.1 8.85 14.9 10.15 15.8 12.05C16.1 12.65 15.6 13.85 15 13.85L7 13.85C6.4 13.85 5.9 12.65 6.2 12.05C7.1 10.15 8.9 8.85 11 8.85Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
+						<button type="button" class="header__icon" aria-label="Cart">
+							<svg width="18" height="13.1" viewbox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+								<path d="M7.83447 4.77447V4.1278C7.83447 2.6278 9.04141 1.15447 10.5418 1.01447C12.3289 0.841136 13.8358 2.2478 13.8358 4.00114V4.92114" stroke="currentColor" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.83474 14.2542H12.8356C15.5162 14.2542 15.9963 13.1809 16.1364 11.8742L16.6365 7.87424C16.8165 6.24756 16.3498 4.9209 13.5025 4.9209H8.16793C5.32061 4.9209 4.85384 6.24756 5.03388 7.87424L5.53399 11.8742C5.67402 13.1809 6.15413 14.2542 8.83474 14.2542Z" stroke="currentColor" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M12.7476 8.00049H12.7536" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+								<path d="M8.12402 8.00049H8.13002" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</header>
@@ -252,7 +269,7 @@
 				</div>
 				<div class="footer__wrapper">
 					<div class="footer__container">
-						<div data-fls-spollers="992" class="footer__lists">
+						<div data-fls-spollers-one="" data-fls-spollers="992" class="footer__lists">
 							<details class="footer__column column-footer">
 								<summary class="column-footer__label">Explorer</summary>
 								<ul class="column-footer__list">
@@ -331,7 +348,7 @@
 							<h3 class="column-footer__subtitle">Sign up for our newsletter.</h3>
 							<form action="#" class="column-footer__form form">
 								<div class="form__inputs">
-									<input type="email" placeholder="Enter your email address here" class="form__input">
+									<input type="email" required placeholder="Enter your email address here" class="form__input">
 									<button type="submit" class="form__button">Subscribe</button>
 								</div>
 								<div class="form__checkbox-wrapper">

@@ -244,6 +244,7 @@
   color: var(--main-color);
   background-color: var(--muted-color);
   border-radius: 1.25rem;
+  transition: color 0.5s, background-color 0.5s;
 }
 .body-showcase__button {
   padding-block: 0.75rem;
@@ -255,6 +256,7 @@
   background-color: var(--main-color);
   border-radius: 5rem;
   margin-bottom: clamp(0.9375rem, 0.6696rem + 1.3393vw, 1.875rem); /* 30/15>1440-320 */
+  transition: background-color 0.5s, color 0.5s;
 }
 .body-showcase__bottom {
   display: flex;
@@ -519,6 +521,7 @@
 }
 .card-product__media {
   width: 100%;
+  overflow: hidden;
 }
 .card-product__media img {
   width: 100%;
@@ -528,21 +531,37 @@
 
 .card-product__item {
   opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.card-product__content {
+  opacity: 0;
   transform: translateY(1.875rem);
   transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.card-product__media img {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: opacity 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
 .--watcher-view .card-product__item {
+  opacity: 1;
+}
+.--watcher-view .card-product__content {
   opacity: 1;
   transform: translateY(0);
 }
-
+.--watcher-view .card-product__media img {
+  opacity: 1;
+  transform: scale(1);
+}
 @media (width < 62em) {
   .showcase__arrows {
     display: none;
   }
 }
-
 @media (width <= 48em) {
   .card-product__item {
     flex-direction: column;
@@ -551,7 +570,6 @@
     flex-direction: column;
   }
 }
-
 @media (width >= 48em) {
   .body-showcase__button {
     width: 100%;
@@ -581,7 +599,6 @@
     aspect-ratio: 720/810;
   }
 }
-
 @media (width >= 62em) {
   .showcase__inner {
     flex-direction: row;
@@ -600,7 +617,16 @@
     display: none;
   }
 }
-
+@media (any-hover: hover), (pointer: fine) {
+  html:not([data-fls-touch]) .body-showcase__specification:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+  }
+  html:not([data-fls-touch]) .body-showcase__button:hover {
+    background-color: var(--muted-color);
+    color: var(--main-color);
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .showcase__slider,
   .body-showcase__header,
@@ -621,6 +647,15 @@
     transform: none;
   }
   .card-product__item {
+    transition: none;
+    opacity: 1;
+  }
+  .card-product__content {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .card-product__media img {
     transition: none;
     opacity: 1;
     transform: none;

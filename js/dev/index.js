@@ -34,12 +34,15 @@ function initSectionSlider() {
 		speed: 800,
 		autoHeight: true,
 		breakpoints: {
-			640: {
+			320: {
 				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			545: {
+				slidesPerView: 2,
 				spaceBetween: 15
 			},
-			767: { slidesPerView: 2 },
-			1100: {
+			767: {
 				slidesPerView: 3,
 				spaceBetween: 30
 			}
