@@ -2,6 +2,10 @@
 
 A responsive multi-page website for the Veloretti electric bike brand, created as a frontend portfolio project. The website features a clean modern interface, smooth animations, interactive product pages, and a fully responsive user experience across all devices.
 
+## Live Demo
+
+https://obielousov.github.io/veloretti-/
+
 ## Features
 
 - Fully responsive layout;
