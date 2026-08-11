@@ -18,6 +18,7 @@ A responsive multi-page website for the Veloretti electric bike brand, created a
 - SCSS (BEM)
 - Vanilla JavaScript (ES Modules)
 - Vite
+- PostHTML
 - Swiper
 
 ## Installation
